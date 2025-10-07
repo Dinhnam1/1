@@ -47,6 +47,11 @@
   border: hidden;
 }
 
+.product-gallery .thumbs img.active-thumbs{
+  border: 2px solid #000;
+  opacity: 1;
+}
+
 .product-gallery .thumbs img:hover{
   border-color: #000;
 }

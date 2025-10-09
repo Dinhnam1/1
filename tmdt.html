@@ -1,246 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="product-view">
+        <!--Product img Left-side-->
+        <div class="product-gallery">
+          <div class="thumbs">
+            <img
+              src="assets/img/product-gallery.png"
+              alt="iPhone 14 Pro Max"
+              class="active-thumb"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="assets/img/front-iphone14.png"
+              alt="iPhone 14 Pro Max Front"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="assets/img/back-iphone14.png"
+              alt="iPhone 14 Pro Max Back"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="assets/img/side-iphone14.png"
+              alt="iPhone 14 Pro Max Side"
+              onclick="changeImage(this)"
+            />
+          </div>
 
-<div class="container">
-  
-  <div class="product-view">
-    
-    <!--Product img Left-side-->
-    <div class="product-gallery">
-      <div class="thumbs">
-        <img src="assets/img/product-gallery.png" alt="iPhone 14 Pro Max" onclick="changeImage(this)">
-        <img src="assets/img/front-iphone14.png" alt="iPhone 14 Pro Max Front" onclick="changeImage(this)">
-        <img src="assets/img/back-iphone14.png" alt="iPhone 14 Pro Max Back" onclick="changeImage(this)">
-        <img src="assets/img/side-iphone14.png" alt="iPhone 14 Pro Max Side" onclick="changeImage(this)">
+          <div class="main-images">
+            <img src="assets/img/product-gallery.png" alt="iPhone 14 Pro Max" />
+          </div>
+        </div>
+
+        <!--Product info Right-side-->
+        <div class="product-info">
+          <h1 style="font-size: bold">Apple iPhone 14 Pro Max</h1>
+          <p class="price">
+            <span class="new-price">$1399</span>
+            <span class="old-price">$1499</span>
+          </p>
+
+          <!--Colors-->
+          <div class="colors">
+            <p>Select color:</p>
+            <button class="color black" data-color="Black"></button>
+            <button class="color purple" data-color="Purple"></button>
+            <button class="color red" data-color="Red"></button>
+            <button class="color gold" data-color="Gold"></button>
+            <button class="color white" data-color="white"></button>
+          </div>
+
+          <!--Storage-->
+          <div class="storage">
+            <button>128GB</button>
+            <button>256GB</button>
+            <button>512GB</button>
+            <button>1TB</button>
+          </div>
+
+          <!--Quick info-->
+          <ul class="quick-info">
+            <li>
+              <img src="/assets/img/icon/Screensize.png" alt="" />
+              <div class="text">
+                <span class="spec">Screen size</span>
+                <span class="value">6.7"</span>
+              </div>
+            </li>
+            <li>
+              <img src="/assets/img/icon/cpu.png" alt="" />
+              <div class="text">
+                <span class="spec">CPU </span>
+                <span class="value"> Apple A16 Bionic </span>
+              </div>
+            </li>
+            <li>
+              <img src="/assets/img/icon/core.png" alt="" />
+              <div class="text">
+                <span class="spec">Number of cores </span>
+                <span class="value"> 6 </span>
+              </div>
+            </li>
+            <li>
+              <img src="/assets/img/icon/camera.png" alt="" />
+              <div class="text">
+                <span class="spec">Main camera </span>
+                <span class="value"> 48-12 -12 MP </span>
+              </div>
+            </li>
+            <li>
+              <img src="/assets/img/icon/f-camera.png" alt="" />
+              <div class="text">
+                <span class="spec">Front-camera </span>
+                <span class="value"> 12 MP </span>
+              </div>
+            </li>
+            <li>
+              <img src="/assets/img/icon/baterry.png" alt="" />
+              <div class="text">
+                <span class="spec">Battery capacity </span>
+                <span class="value"> 4323 mAh </span>
+              </div>
+            </li>
+          </ul>
+
+          <!--Short description-->
+          <div class="short-des">
+            <p>
+              Enhanced capabilities thanks toan enlarged display of 6.7
+              inchesand work without rechargingthroughout the day. Incredible
+              photosas in weak, yesand in bright lightusing the new systemwith
+              two cameras <span class="more">more...</span>
+            </p>
+          </div>
+
+          <!--Add to Wishlist & Cart button-->
+          <div class="actions">
+            <button class="add-wishlist">Add to Wishlist</button>
+            <button class="add-cart">Add to Cart</button>
+          </div>
+          <ul class="extra-info">
+            <li>
+              <div class="icon"><i class="fa-solid fa-truck"></i></div>
+              <div class="text">
+                <span class="spec">Free Delivery</span>
+                <span class="value">1-2 day</span>
+              </div>
+            </li>
+            <li>
+              <div class="icon"><i class="fa-solid fa-store"></i></div>
+              <div class="text">
+                <span class="spec">In Stock</span>
+                <span class="value">Today</span>
+              </div>
+            </li>
+            <li>
+              <div class="icon"><i class="fa-solid fa-shield"></i></div>
+              <div class="text">
+                <span class="spec">Guaranteed</span>
+                <span class="value">1 year</span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <div class="main-images">
-        <img src="assets/img/product-gallery.png" alt ="iPhone 14 Pro Max"> 
-      </div>
-    </div>
-
-    <!--Product info Right-side-->
-    <div class="product-info">
-      <h1 style="font-size: bold;">Apple iPhone 14 Pro Max</h1>
-      <p class="price"> 
-        <span class="new-price">$1399</span>
-        <span class="old-price">$1499</span>
-      </p>
-
-      <!--Colors-->
-      <div class="colors">
-        <p>Select color: </p>
-        <button class="color black" data-color="Black"></button>
-        <button class="color purple" data-color="Purple"></button>
-        <button class="color red" data-color="Red"></button>
-        <button class="color gold" data-color="Gold"></button>
-        <button class="color white" data-color="white"></button>
-      </div>
-
-      <!--Storage-->
-      <div class="storage">
-        <button>128GB</button>
-        <button>256GB</button>
-        <button>512GB</button>
-        <button>1TB</button>
-      </div>
-      
-      <!--Quick info-->
-      <ul class="quick-info">
-      <li>
-        <img src="/assets/img/icon/Screensize.png" alt="">
-          <div class="text">
-            <span class="spec">Screen size</span>
-            <span class="value">6.7"</span>
-          </div>
-      </li>
-      <li>
-        <img src="/assets/img/icon/cpu.png" alt="">
-          <div class="text">  
-            <span class="spec">CPU </span> 
-            <span class="value"> Apple A16 Bionic </span>  
-          </div>
-      </li>
-      <li>
-        <img src="/assets/img/icon/core.png" alt="">
-          <div class="text"> 
-            <span class="spec">Number of cores </span> 
-            <span class="value"> 6 </span>
-          </div>
-      </li>
-      <li>
-        <img src="/assets/img/icon/camera.png" alt="">
-          <div class="text"> 
-            <span class="spec">Main camera </span>
-            <span class="value"> 48-12 -12 MP </span>
-          </div>
-      </li>
-      <li>
-        <img src="/assets/img/icon/f-camera.png" alt="">
-          <div class="text"> 
-            <span class="spec">Front-camera </span>
-            <span class="value"> 12 MP </span>
-          </div>
-      </li>
-      <li>
-        <img src="/assets/img/icon/baterry.png" alt="">
-          <div class="text"> 
-            <span class="spec">Battery capacity  </span>
-            <span class="value"> 4323 mAh </span>
-          </div>
-      </li>
-      </ul>
-
-      <!--Short description-->
-      <div class="short-des">
-        <p> 
-          Enhanced capabilities thanks toan enlarged display of 6.7 inchesand work 
-          without rechargingthroughout the day. Incredible photosas in weak, yesand 
-          in bright lightusing the new systemwith two cameras <span class="more">more...</span>
+      <!-- ----- DETAILS ----- -->
+      <div class="card">
+        <h2>Details</h2>
+        <p class="desc">
+          Just as a book is judged by its cover, the first thing you notice when
+          you pick up a modern smartphone is the display. Nothing surprising,
+          because advanced technologies allow you to practically level the
+          display frames and cutouts for the front camera and speaker, leaving
+          no room for bold design solutions. And how good that in such realities
+          Apple everything is fine with displays. Both critics and mass
+          consumers always praise the quality of the picture provided by the
+          products of the Californian brand. And last year’s 6.7-inch Retina
+          panels, which had ProMotion, caused real admiration for many.
         </p>
+
+        <h3>Screen</h3>
+        <table>
+          <tr>
+            <td>Screen diagonal</td>
+            <td>6.7"</td>
+          </tr>
+          <tr>
+            <td>The screen resolution</td>
+            <td>2796×1290</td>
+          </tr>
+          <tr>
+            <td>The screen refresh rate</td>
+            <td>120 Hz</td>
+          </tr>
+          <tr>
+            <td>The pixel density</td>
+            <td>460 ppi</td>
+          </tr>
+          <tr>
+            <td>Screen type</td>
+            <td>OLED</td>
+          </tr>
+          <tr>
+            <td>Additionally</td>
+            <td>
+              Dynamic Island <br />
+              Always-On display <br />
+              HDR display <br />
+              True Tone <br />
+              Wide color (P3)
+            </td>
+          </tr>
+        </table>
+
+        <h3>CPU</h3>
+        <table>
+          <tr>
+            <td>CPU</td>
+            <td>A16 Bionic</td>
+          </tr>
+          <tr>
+            <td>Number of cores</td>
+            <td>6</td>
+          </tr>
+        </table>
+
+        <button class="view-more">View More ▼</button>
       </div>
 
-      <!--Add to Wishlist & Cart button-->
-      <div class="actions">
-        <button class="add-wishlist">Add to Wishlist</button>
-        <button class="add-cart">Add to Cart</button>
-      </div>
-      <ul class="extra-info">
-        <li>
-          <div class="icon"><i class="fa-solid fa-truck"></i></div>
-          <div class="text">
-            <span class="spec">Free Delivery</span>
-            <span class="value">1-2 day</span>
+      <!-- ----- RELATED PRODUCTS ----- -->
+      <div class="related-products">
+        <h2>Related Products</h2>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="./assets/img/14progold.png" alt="iPhone 14 Pro" />
+            <div class="product-name">
+              Apple iPhone 14 Pro 512GB Gold (MQ233)
+            </div>
+            <div class="price-product">$1437</div>
+            <button class="buy-btn">Buy Now</button>
           </div>
-        </li>
-        <li>
-          <div class="icon"><i class="fa-solid fa-store"></i></div>
-          <div class="text">
-            <span class="spec">In Stock</span>
-            <span class="value">Today</span>
+
+          <div class="product-card">
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="./assets/img/applemax.png" alt="AirPods Max" />
+            <div class="product-name">
+              AirPods Max Silver Starlight Aluminium
+            </div>
+            <div class="price-product">$549</div>
+            <button class="buy-btn">Buy Now</button>
           </div>
-        </li>
-        <li>
-          <div class="icon"><i class="fa-solid fa-shield"></i></div>
-          <div class="text">
-            <span class="spec">Guaranteed</span>
-            <span class="value">1 year</span>
+
+          <div class="product-card">
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="./assets/img/applewatch.png" alt="Apple Watch" />
+            <div class="product-name">
+              Apple Watch Series 9 GPS 41mm Starlight Aluminium
+            </div>
+            <div class="price-product">$399</div>
+            <button class="buy-btn">Buy Now</button>
           </div>
-        </li>
-      </ul>
-    </div>
 
-    </div>
-    <!-- ----- DETAILS ----- -->
-    <div class="card">
-      <h2>Details</h2>
-      <p class="desc">
-        Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year’s 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.
-      </p>
-
-      <h3>Screen</h3>
-      <table>
-        <tr>
-          <td>Screen diagonal</td>
-          <td>6.7"</td>
-        </tr>
-        <tr>
-          <td>The screen resolution</td>
-          <td>2796×1290</td>
-        </tr>
-        <tr>
-          <td>The screen refresh rate</td>
-          <td>120 Hz</td>
-        </tr>
-        <tr>
-          <td>The pixel density</td>
-          <td>460 ppi</td>
-        </tr>
-        <tr>
-          <td>Screen type</td>
-          <td>OLED</td>
-        </tr>
-        <tr>
-          <td>Additionally</td>
-          <td>
-            Dynamic Island <br>
-            Always-On display <br>
-            HDR display <br>
-            True Tone <br>
-            Wide color (P3)
-          </td>
-        </tr>
-      </table>
-
-      <h3>CPU</h3>
-      <table>
-        <tr>
-          <td>CPU</td>
-          <td>A16 Bionic</td>
-        </tr>
-        <tr>
-          <td>Number of cores</td>
-          <td>6</td>
-        </tr>
-      </table>
-
-      <button class="view-more">View More ▼</button>
-    </div>
-
-    <!-- ----- RELATED PRODUCTS ----- -->
-    <div class="related-products">
-    <h2>Related Products</h2>
-    <div class="products-grid">
-      <div class="product-card">
-        <div class="wishlist">
-          <i class="fa-regular fa-heart"></i>
-         </div>
-      <img src="./assets/img/14progold.png" alt="iPhone 14 Pro">
-      <div class="product-name">Apple iPhone 14 Pro 512GB Gold (MQ233)</div>
-      <div class="price-product">$1437</div>
-      <button class="buy-btn">Buy Now</button>
-      </div>
-
-      <div class="product-card">
-         <div class="wishlist">
-          <i class="fa-regular fa-heart"></i>
-         </div>
-        <img src="./assets/img/applemax.png" alt="AirPods Max">
-        <div class="product-name">AirPods Max Silver Starlight Aluminium</div>
-        <div class="price-product">$549</div>
-        <button class="buy-btn">Buy Now</button>
-      </div>
-
-      <div class="product-card">
-         <div class="wishlist">
-          <i class="fa-regular fa-heart"></i>
-         </div>
-        <img src="./assets/img/applewatch.png" alt="Apple Watch">
-        <div class="product-name">Apple Watch Series 9 GPS 41mm Starlight Aluminium</div>
-        <div class="price-product">$399</div>
-        <button class="buy-btn">Buy Now</button>
-      </div>
-
-      <div class="product-card">
-          <div class="wishlist">
-          <i class="fa-regular fa-heart"></i>
-         </div>
-        <img src="./assets/img/silver.png" alt="iPhone 14 Pro 1TB">
-        <div class="product-name">Apple iPhone 14 Pro 1TB Gold (MQ2V3)</div>
-        <div class="price-product">$1499</div>
-        <button class="buy-btn">Buy Now</button>
+          <div class="product-card">
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="./assets/img/silver.png" alt="iPhone 14 Pro 1TB" />
+            <div class="product-name">Apple iPhone 14 Pro 1TB Gold (MQ2V3)</div>
+            <div class="price-product">$1499</div>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-  <script src="./assets/script.js"></script>
-</body>
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
